@@ -1,0 +1,170 @@
+{
+  "kind": "deterministic_synthetic_simulation",
+  "provider_called": false,
+  "training_startup_ticks": [
+    6,
+    9,
+    12
+  ],
+  "heldout_stage_ticks": [
+    3,
+    5,
+    4
+  ],
+  "same_arrival_trace": true,
+  "policies": [
+    {
+      "policy": "reactive",
+      "deadline_misses": 4,
+      "replica_ticks": 60,
+      "busy_ticks": 8,
+      "ready_idle_ticks": 28,
+      "readiness_stages": [
+        {
+          "launch": 100,
+          "download_done": 103,
+          "load_done": 108,
+          "ready": 112
+        },
+        {
+          "launch": 100,
+          "download_done": 103,
+          "load_done": 108,
+          "ready": 112
+        }
+      ],
+      "requests": [
+        {
+          "arrival": 100,
+          "start": 112,
+          "finish": 114,
+          "deadline": 104,
+          "replica": 0
+        },
+        {
+          "arrival": 100,
+          "start": 112,
+          "finish": 114,
+          "deadline": 104,
+          "replica": 1
+        },
+        {
+          "arrival": 100,
+          "start": 114,
+          "finish": 116,
+          "deadline": 104,
+          "replica": 0
+        },
+        {
+          "arrival": 100,
+          "start": 114,
+          "finish": 116,
+          "deadline": 104,
+          "replica": 1
+        }
+      ]
+    },
+    {
+      "policy": "mean_schedule",
+      "deadline_misses": 4,
+      "replica_ticks": 78,
+      "busy_ticks": 8,
+      "ready_idle_ticks": 46,
+      "readiness_stages": [
+        {
+          "launch": 91,
+          "download_done": 94,
+          "load_done": 99,
+          "ready": 103
+        },
+        {
+          "launch": 91,
+          "download_done": 94,
+          "load_done": 99,
+          "ready": 103
+        }
+      ],
+      "requests": [
+        {
+          "arrival": 100,
+          "start": 103,
+          "finish": 105,
+          "deadline": 104,
+          "replica": 0
+        },
+        {
+          "arrival": 100,
+          "start": 103,
+          "finish": 105,
+          "deadline": 104,
+          "replica": 1
+        },
+        {
+          "arrival": 100,
+          "start": 105,
+          "finish": 107,
+          "deadline": 104,
+          "replica": 0
+        },
+        {
+          "arrival": 100,
+          "start": 105,
+          "finish": 107,
+          "deadline": 104,
+          "replica": 1
+        }
+      ]
+    },
+    {
+      "policy": "margin_schedule",
+      "deadline_misses": 0,
+      "replica_ticks": 84,
+      "busy_ticks": 8,
+      "ready_idle_ticks": 52,
+      "readiness_stages": [
+        {
+          "launch": 88,
+          "download_done": 91,
+          "load_done": 96,
+          "ready": 100
+        },
+        {
+          "launch": 88,
+          "download_done": 91,
+          "load_done": 96,
+          "ready": 100
+        }
+      ],
+      "requests": [
+        {
+          "arrival": 100,
+          "start": 100,
+          "finish": 102,
+          "deadline": 104,
+          "replica": 0
+        },
+        {
+          "arrival": 100,
+          "start": 100,
+          "finish": 102,
+          "deadline": 104,
+          "replica": 1
+        },
+        {
+          "arrival": 100,
+          "start": 102,
+          "finish": 104,
+          "deadline": 104,
+          "replica": 0
+        },
+        {
+          "arrival": 100,
+          "start": 102,
+          "finish": 104,
+          "deadline": 104,
+          "replica": 1
+        }
+      ]
+    }
+  ]
+}

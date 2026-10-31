@@ -1,0 +1,9 @@
+{
+  "company": "Baseten",
+  "title": "WarmDebt",
+  "test_command": "make test",
+  "demo_command": "./build/warmdebt demo",
+  "scope": "Deterministic same-arrival synthetic readiness and deadline/capacity simulation; no provider integration.",
+  "implemented": true,
+  "integration_status": "unverified"
+}

@@ -1,0 +1,15 @@
+g++ -std=c++17 -O2 -Wall -Wextra -Wpedantic -Werror tests.cpp -o build/tests
+g++ -std=c++17 -O2 -Wall -Wextra -Wpedantic -Werror main.cpp -o build/warmdebt
+./build/tests
+PASS same arrivals cost deadline tradeoff
+PASS readiness phases remain distinct
+PASS no traffic reactive avoids schedule waste
+PASS zero startup clean negative control
+PASS surprise burst and unseen startup expose assumption
+PASS queue hand calculated FIFO and exact deadline
+PASS training separate from heldout and abstention
+PASS invalid stage trace and capacity reject
+PASS observations beyond horizon bounded cost
+PASS deterministic repetition and accounting
+SUMMARY groups=10 assertions=114
+./build/warmdebt demo > /dev/null
